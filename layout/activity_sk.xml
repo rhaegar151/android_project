@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+
+    tools:context=".sk">
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/b6"
+      android:onClick="sign_out"
+      android:text="Sign out"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="56dp"
+                android:background="#0077ff"
+                android:onClick="info"
+                android:text="@string/add_inf" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/holo_blue_light"
+                android:onClick="add"
+                android:text="Add" />
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="CF"
+                    android:text="CHOOSE FILE"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b2"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="Item_name"
+                    android:inputType="text|textPersonName"
+                    android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/e2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="price"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/e3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="no. of copies"
+                android:inputType="text"
+                android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:visibility="gone" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/r6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b4"
+                    android:visibility="gone"
+                    android:text="Book"/>
+
+                <RadioButton
+                    android:id="@+id/r7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="DVD"/>
+
+
+            </RadioGroup>
+
+                <ProgressBar
+                    android:id="@+id/pb1"
+                    style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="110dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="don"
+                    android:text="@string/done"
+                    android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/holo_blue_light"
+                android:onClick="upd"
+                android:text="Update" />
+
+              <RadioGroup
+                  android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+                 <RadioButton
+                     android:id="@+id/r1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/b4"
+                     android:visibility="gone"
+                     android:text="Update item info"/>
+
+                  <RadioButton
+                      android:id="@+id/r2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:visibility="gone"
+                      android:text="Update personal info"/>
+
+
+              </RadioGroup>
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_below="@+id/r2"
+                android:onClick="doupd"
+                android:text="Go" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/r8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b4"
+                android:visibility="gone"
+                android:text="Book"/>
+
+            <RadioButton
+                android:id="@+id/r9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="DVD"/>
+
+
+        </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/e4"
+                android:hint="Enter name"
+                android:inputType="text"
+                android:layout_below="@+id/b7"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/e5"
+                android:hint="Enter new price"
+                android:inputType="text"
+                android:layout_below="@+id/e4"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/e10"
+                android:hint="Enter no. of copies"
+                android:inputType="text"
+                android:layout_below="@+id/e5"
+                android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e5"
+                    android:visibility="gone"
+                    android:onClick="modifyItem"
+                    android:text="Modifyit" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/e6"
+                android:layout_marginTop="20dp"
+                android:hint="Enter new Shopname"
+                android:inputType="text"
+                android:layout_below="@+id/b8"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/e7"
+                android:hint="Enter new Latitude"
+                android:inputType="text"
+                android:layout_below="@+id/e6"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/e8"
+                android:hint="Enter new Longtitude"
+                android:inputType="text"
+                android:layout_below="@+id/e7"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e8"
+                android:visibility="gone"
+                android:onClick="modifyPinfo"
+                android:text="Modifyit" />
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b9"
+                android:layout_marginTop="20dp"
+
+                android:background="@android:color/holo_blue_light"
+                android:onClick="deleteitem"
+                android:text="Delete item" />
+
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b4"
+                    android:visibility="gone"
+                    android:text="Book"/>
+
+                <RadioButton
+                    android:id="@+id/r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="DVD"/>
+
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/e9"
+                android:hint="Enter item name"
+                android:inputType="text"
+                android:layout_below="@+id/r4"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e9"
+                android:visibility="gone"
+                android:onClick="deleteit"
+                android:text="go" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
